@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Footer from '../../componants/footer/Footer'
 import Header from '../../componants/header/Header'
 import plant4 from '../../assets/plants/succulentPlant1.jpg'
-import plant5 from '../../assets/plants/succulentPlant2.jpg'
+import plant5 from '../../assets/plants/succulentplant2.jpg'
 import plant6 from '../../assets/plants/SucculentPlant3.jpg'
 import plant7 from '../../assets/plants/flowerimg3.jpg'
 import plant8 from '../../assets/plants/flowerimg1.avif'
