@@ -3,10 +3,6 @@ import img2 from '../../assets/serviceimg2.jpg'
 import img3 from '../../assets/serviceimg3.jpg'
 import Footer from '../../componants/footer/Footer'
 import Header from '../../componants/header/Header'
-import serimg1 from '../../assets/services/servicegrid1.webp'
-import serimg2 from '../../assets/services/servicegrid2.webp'
-import serimg3 from '../../assets/services/servicegrid3.webp'
-import serimg4 from '../../assets/services/servicegrid4.webp'
 import organicvilla from '../../assets/services/organicvilla.webp'
 import gardening from '../../assets/services/gardeningservice.jpg'
 import terrace from '../../assets/services/terracegardening.webp'
@@ -29,7 +25,7 @@ import pro6 from '../../assets/project/pro6.webp'
 import pro7 from '../../assets/project/pro7.webp'
 import pro8 from '../../assets/project/pro8.webp'
 import pro9 from '../../assets/project/pro9.webp'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
 import { Link } from 'react-router-dom'
 
 function Services() {

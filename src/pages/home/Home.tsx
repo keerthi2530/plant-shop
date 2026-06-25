@@ -1,29 +1,9 @@
-// import img from '../../assets/aboutimg.jpeg';
-import img1 from "../../assets/plants/snakeplant.jpg";
-import img2 from "../../assets/plants/moneyplant.jpg";
+
 import img3 from "../../assets/plants/peacelilyplant.jpg";
-import bamboo from "../../assets/plants/bambootree.webp";
-// import img4 from '../../assets/about2img.jpeg'
-// import img5 from '../../assets/plantlogo2.png'
 import Header from "../../componants/header/Header";
 import Footer from "../../componants/footer/Footer";
-// import img from "../../assets/aboutplant.jpg";
-// import img9 from "../../assets/plantlogo2.png";
-// import succulent3 from "../../assets/SucculentPlant3.jpg";
 import openshop from "../../assets/opentowork.jpg";
 import "animate.css";
-// import img4 from "../../assets/indoorplant.jpg";
-// import img5 from "../../assets/outdoorplant.jpg";
-// import img6 from "../../assets/outdoorimg3.webp";
-// import img7 from "../../assets/fruitstree.jpg";
-// import img10 from "../../assets/Bonsai Pots.webp";
-// import img11 from "../../assets/Ceramic Pots.webp";
-// import img12 from "../../assets/Fiber Pots & Planters.jpg";
-// import img13 from "../../assets/Perennial Annual Flowers.jpg";
-// import img14 from "../../assets/herbs.webp";
-// import img8 from "../../assets/templetree.webp";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPhone, faAt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
 import MonsteraDeliciosa from '../../assets/plants/montesoraplant.jpg'
 import FiddleLeafFig from '../../assets/plants/FiddleLeafFig.jpg'
@@ -37,15 +17,7 @@ import serimg2 from '../../assets/services/servicegrid2.webp'
 import serimg3 from '../../assets/services/servicegrid3.webp'
 import serimg4 from '../../assets/services/servicegrid4.webp'
 import { Link } from "react-router-dom";
-import pro1 from '../../assets/project/pro1.webp'
-import pro2 from '../../assets/project/pro2.webp'
-import pro3 from '../../assets/project/pro3.webp'
-import pro4 from '../../assets/project/pro4.webp'
-import pro5 from '../../assets/project/pro5.webp'
-import pro6 from '../../assets/project/pro6.webp'
-import pro7 from '../../assets/project/pro7.webp'
-import pro8 from '../../assets/project/pro8.webp'
-import pro9 from '../../assets/project/pro9.webp'
+
 
 
 function Home() {

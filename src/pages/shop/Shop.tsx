@@ -9,14 +9,6 @@ import potsimglogo from'../../assets/potsimglogo.avif'
 import fertilizer from '../../assets/fertilizerimglogo.avif'
 import tools from '../../assets/toolsimglogo.jpg'
 import './Shop.css'
-import MonsteraDeliciosa from '../../assets/plants/montesoraplant.jpg'
-import FiddleLeafFig from '../../assets/plants/FiddleLeafFig.jpg'
-import  BirdofParadise from '../../assets/plants/BirdofParadise.jpg'
-import ArecaPalm from '../../assets/plants/ArecaPalm.jpg'
-import RubberPlant from '../../assets/plants/RubberPlant.jpg'
-import contentimg from '../../assets/Gemini_Generated_Image_xi2bf0xi2bf0xi2b.png'
-import contentimg2 from '../../assets/contentimg2.webp'
-import Plants from "./Plants";
 import watsol1 from '../../assets/watersolution/watsol1.webp'
 import watsol2 from '../../assets/watersolution/watsol2.webp'
 import watsol3 from '../../assets/watersolution/watsol3.webp'
@@ -26,11 +18,10 @@ import stand2 from '../../assets/stand/stand3.webp'
 import stand3 from '../../assets/stand/stand4.webp'
 import stand4 from '../../assets/stand/stand5.webp'
 import stand5 from '../../assets/stand/stand1.avif'
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import gift1 from '../../assets/gift/gift1.webp'
 import gift2 from '../../assets/gift/2.webp'
 import gift3 from '../../assets/gift/gift3.webp'
