@@ -1,0 +1,29 @@
+.order-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+.order-card {
+  width: 430px;
+  max-width: 100%;
+
+  padding: 40px 30px;
+  border-radius: 30px;
+  
+  background: #e0f8ca;
+}
+
+.order-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+
+

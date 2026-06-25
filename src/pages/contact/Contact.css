@@ -1,0 +1,459 @@
+/* From Uiverse.io by somshri16 */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.message {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.input01 {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+}
+
+.form label .input01:focus + span,.form label .input01:valid + span {
+  top: 50px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input01:valid + span {
+  color: green;
+}
+
+.fancy {
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #cacaca;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #818181;
+  transform: translateX(30%);
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: #cacaca;
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+/* From Uiverse.io by bociKond */ 
+.form {
+  --bg-light: #efefef;
+  --bg-dark: #707070;
+  --clr: #58bc82;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--clr-alpha);
+  outline: 2px solid var(--bg-dark);
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: 2px solid var(--clr);
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--clr);
+  font-weight: 600;
+}
+
+.form .submit {
+  padding: 1rem 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form .submit:hover {
+  background-color: var(--clr);
+  color: var(--bg-dark);
+}
+
+.span {
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+
+.span a {
+  color: var(--clr);
+}
+.contact-img {
+    max-height: 600px;
+    width: 100%;
+}
+/* Contact Section */
+.contact-section {
+    padding: 20px 0;
+    /* background: #f8faf8; */
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    width: 75%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* Heading */
+.card h4,
+.card h5 {
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Inputs */
+
+/* Textarea */
+textarea.form-control {
+    min-height: 120px;
+}
+
+/* Button */
+
+.btn-success:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Info */
+.contact-info li {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.contact-info svg {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Working Hours Box */
+.working-hours {
+    background: #f0fff5;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Animation */
+.card {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.form-control {
+    border-radius: 12px !important;
+}
+
+.form-control:focus {
+    border-color: #198754 !important;
+    box-shadow: 0 0 10px rgba(25,135,84,0.15) !important;
+}
+
+.btn-success {
+    border-radius: 30px;
+}
+.enq-card{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+/* Container styling */
+.contact-container {
+  max-width: 450px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2b2b2b;
+}
+
+/* Heading with the bottom green bar indicator */
+.contact-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #164022; /* Dark forest green */
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.contact-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #4a7c59; /* Medium green line */
+}
+
+/* Individual row item setup */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #eef2f0; /* Soft border dividers */
+}
+
+.contact-item:last-child {
+  border-bottom: none; /* Removes border for the last item */
+}
+
+/* Circular icon badges */
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: #f3f6f4; /* Off-white circular background */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e5c32; /* Rich green icon color */
+  font-size: 18px;
+  flex-shrink: 0; /* Prevents the circle from squishing */
+  margin-right: 20px;
+}
+
+/* Text block layouts */
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #164022;
+  margin-bottom: 6px;
+}
+
+.contact-value {
+  font-size: 14.5px;
+  color: #555555;
+  line-height: 1.5;
+  margin: 0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover state for links (Phone, Email, Whatsapp) */
+a.contact-value:hover {
+  color: #1e5c32;
+}
