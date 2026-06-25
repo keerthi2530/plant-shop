@@ -8,7 +8,7 @@ import offer3 from '../../assets/offer/offerimg3.webp'
 import img2 from '../../assets/aboutplant.jpg'
 import img3 from '../../assets/serviceimg2.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLeaf, faTruck, faTag,faHandHoldingDroplet, faSeedling, faSpa, faShield, faTree } from '@fortawesome/free-solid-svg-icons';
+import { faTruck, faTag,faHandHoldingDroplet, faSeedling } from '@fortawesome/free-solid-svg-icons';
 import './About.css'
 import reviewimg1 from '../../assets/publicreview/reviewimg1.avif'
 import reviewimg2 from '../../assets/publicreview/reviewimg2.avif'
@@ -21,7 +21,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import aboutimg from '../../assets/gift/gift6.webp'
 
 function Aboutus() {

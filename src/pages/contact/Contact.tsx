@@ -1,6 +1,5 @@
 import Footer from "../../componants/footer/Footer"
 import Header from "../../componants/header/Header"
-import img from "../../assets/contactpageimg.jpg"
 import './Contact.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone,faEnvelope,faLocationDot,faClock } from "@fortawesome/free-solid-svg-icons"
