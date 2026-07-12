@@ -18,10 +18,12 @@ import  plant12 from '../../assets/plants/BirdofParadise.jpg'
 import plant13 from '../../assets/plants/ArecaPalm.jpg'
 import plant14 from '../../assets/plants/RubberPlant.jpg'
 import plant16 from '../../assets/plants/bambootree.webp'
-
+import "./Plants.css"
 
 
 function Plants(){
+
+  
     return( 
         <>
     
@@ -69,7 +71,7 @@ function Plants(){
   state={{
     name: "Snake Plant",
     price: "₹499",
-    image: plant2,
+    image: plant1,
   }}
   className="btn btn-outline-success w-100"
 >

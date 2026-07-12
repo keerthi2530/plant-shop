@@ -4,8 +4,34 @@ import './Contact.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPhone,faEnvelope,faLocationDot,faClock } from "@fortawesome/free-solid-svg-icons"
 // import contactimg from '../../assets/about2img.jpeg'
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+
 
 function Contact(){
+  const form = useRef<HTMLFormElement>(null);
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  if (!form.current) return;
+
+  emailjs
+    .sendForm(
+      "service_na67v3q",
+      "template_tqwvosp",
+      form.current,
+      "yjKKz91CXvPLJFpad"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      form.current?.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send message.");
+    });
+};
     return(
         <>
         <Header/>
@@ -21,13 +47,14 @@ function Contact(){
         Fill out the form below and we'll get back to you as soon as possible.
     </p>
 
-    <form>
+   <form ref={form} onSubmit={sendEmail}>
 
         <div className="form-floating mb-3">
             <input
                 type="text"
                 className="form-control"
                 id="name"
+                name="name"
                 placeholder="Enter your name"
             />
             <label htmlFor="name">Name</label>
@@ -38,6 +65,7 @@ function Contact(){
                 type="email"
                 className="form-control"
                 id="email"
+                name="email"
                 placeholder="name@example.com"
             />
             <label htmlFor="email">Email Address</label>
@@ -48,6 +76,7 @@ function Contact(){
                 type="tel"
                 className="form-control"
                 id="mobile"
+                name="phone"
                 placeholder="Enter your mobile number"
             />
             <label htmlFor="mobile">Mobile Number</label>
@@ -57,6 +86,7 @@ function Contact(){
             <textarea
                 className="form-control"
                 id="address"
+                name="address"
                 placeholder="Enter your address"
                 style={{ height: "100px" }}
             ></textarea>
@@ -67,6 +97,7 @@ function Contact(){
             <textarea
                 className="form-control"
                 id="message"
+                name="message"
                 placeholder="Enter your message"
                 style={{ height: "120px" }}
             ></textarea>
@@ -195,47 +226,6 @@ function Contact(){
   </div>
 </div>
 </div>
-
-        {/* <div>
-    <form className="form">
-    
-    <div className="flex">
-        <label>
-            <input  placeholder="" type="text" className="input"/>
-            <span>first name</span>
-        </label>
-
-        <label>
-            <input placeholder="" type="text" className="input"/>
-            <span>last name</span>
-        </label>
-    </div>  
-            
-    <label>
-        <input placeholder="" type="email" className="input"/>
-        <span>email</span>
-    </label> 
-        
-    <label>
-        <input type="tel" placeholder="" className="input"/>
-        <span>contact number</span>
-    </label>
-    <label>
-        <textarea placeholder="" className="input01"/>
-        <span>message</span>
-    </label>
-    
-    <button className="fancy">
-      <span className="top-key"></span>
-      <span className="text">submit</span>
-      <span className="bottom-key-1"></span>
-      <span className="bottom-key-2"></span>
-    </button>
-</form>
-
-</div> */}
-
-
 
 <div className="container py-5 text-start">
 

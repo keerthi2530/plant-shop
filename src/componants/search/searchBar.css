@@ -1,0 +1,31 @@
+.search-wrapper {
+  position: relative;
+  width: 260px;
+}
+
+.search-input {
+  border-radius: 30px;
+}
+
+.suggestion-box {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.suggestion-item {
+  padding: 2px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.suggestion-item:hover {
+  background: #1d754c;
+  color: white;
+}

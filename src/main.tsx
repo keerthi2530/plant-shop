@@ -6,10 +6,12 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import { BrowserRouter } from 'react-router-dom'
 
+
+
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+   <StrictMode>
     <BrowserRouter>
-    <App />
+        <App />
     </BrowserRouter>
   </StrictMode>
 )

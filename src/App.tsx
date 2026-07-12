@@ -35,6 +35,7 @@ function App() {
   <Route path="/fertilizer" element={<Fertilizer />} />
   <Route path="/tools" element={<Tools />} />
   <Route path="/buynow" element={<BuyNow />} />
+
 </Routes>
 
     </>

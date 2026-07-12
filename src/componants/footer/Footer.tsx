@@ -42,13 +42,14 @@ function Footer(){
             </ul>
             
         </div>
-        <div>
-             <p className="text-body-secondary fw-normal fs-6">© 2025 Green Plant Shop Inc. All rights reserved.</p>
-        </div>
-
-
-
+    
     </footer>
+
+    <div className="text-center mt-2 py-4">
+    <p className="text-body-secondary fw-normal fs-6 mb-0">
+      © 2025 Green Plant Shop Inc. All rights reserved.
+    </p>
+  </div>
 </div>
 
 

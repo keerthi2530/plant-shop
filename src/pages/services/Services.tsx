@@ -1,4 +1,4 @@
-import img1 from '../../assets/serviceimg1.png'
+
 import img2 from '../../assets/serviceimg2.jpg'
 import img3 from '../../assets/serviceimg3.jpg'
 import Footer from '../../componants/footer/Footer'
@@ -225,42 +225,6 @@ Accurate soil, water, and plant testing services to support healthy and producti
     </a>
   </div>
 </div>
-  
-
-      <div className="container col-xxl-8 px-4 py-2">
-
-        <div className="row flex-lg-row-reverse align-items-center g-5 py-2">
-          <div className="col-10 col-sm-8 col-lg-6 slide-up-img">
-            <img
-              src={img1}
-              className="d-block mx-lg-auto rounded-5 img-fluid"
-              alt="Bootstrap Themes"
-              width="500"
-              height="300"
-              loading="lazy"
-            />
-          </div>
-          <div className="col-lg-6 slide-up-text">
-            <h1 className="display-6 fw-light text-success lh-1 mb-3">Landscaping</h1>
-            <p className="lead fs-6">
-              Beautiful landscaping of any open spaces creates not just green environment but also radiates positive energy. We provide complete solution from Design, Plant selection to installation and planting of plants and trees to your desire.
-            </p>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-center">
-              {/* <button type="button" className="btn btn-sm btn-success btn-md px-1 me-md-1">CONTACT</button> */}
-       <Link to="/contact">
-  <button
-    type="button"
-    className="btn btn-outline-success btn-sm px-1 rounded-50"
-  >
-    CONTACT
-  </button>
-</Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
 
       <div className="container col-xxl-8 px-4 py-2">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-2">
@@ -310,6 +274,7 @@ Accurate soil, water, and plant testing services to support healthy and producti
           </div>
           <div className="col-lg-6">
             <h1 className="display-6 fw-light text-success lh-1 mb-3">farm land development</h1>
+            
             <p className="lead fs-6">
               With ever growing interest in development of personal use farm lands by garden enthusiasts, we have wide range of trees, all kind of fruit trees and avenue trees to cater to development of your farm land.
             </p>
@@ -377,8 +342,8 @@ Accurate soil, water, and plant testing services to support healthy and producti
 
   </div>
    <div className="text-center mt-4">
-    <a href="/services" className="read-more-btn">
-      For More Details <span>→</span>
+    <a href="/contact" className="read-more-btn">
+      Book your Projects <span>→</span>
     </a>
   </div>
 </div>
