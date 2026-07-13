@@ -68,7 +68,7 @@ function Contact(){
                 name="email"
                 placeholder="name@example.com"
             />
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email">Email</label>
         </div>
 
         <div className="form-floating mb-3">
@@ -101,7 +101,7 @@ function Contact(){
                 placeholder="Enter your message"
                 style={{ height: "120px" }}
             ></textarea>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Share Your Requirement</label>
         </div>
 
         <button
